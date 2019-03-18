@@ -1,7 +1,20 @@
 class PostsController < ApplicationController
+    def show
+        @post = Post.find(params[:id])
+    end
+    
     def new
     end
+    
     def create
-        Params[:post].inspect
+        @post = Post.new(post_params)
+        
+        @post.save
+        redirect_to @post
     end
 end
+
+private
+    def post_params
+        params.require(:post).permit(:title, :title_of_the_game, :game_username, :text)
+    end
