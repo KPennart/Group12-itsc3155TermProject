@@ -20,3 +20,14 @@ textarea
     background-color: #f8f8f8;
     resize: none;
 }
+
+input[type=button], input[type=submit]
+{
+    background-color: #797979;
+    float: right;
+    border: none;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
