@@ -1,11 +1,22 @@
-h2{
+h2
+{
   font-family: arial;  
-  
 }
 
-input[type=text] {
+input[type=text] 
+{
     width: 50%;
     padding: 12px 12px;
     border: 2px solid #ccc;
     background-color: #f8f8f8;
+}
+
+textarea 
+{
+    width: 98.5%;
+    height: 300px;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    resize: none;
 }
