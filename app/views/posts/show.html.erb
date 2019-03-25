@@ -24,7 +24,10 @@
         <strong>Commenter:</strong>
         <%= comment.commenter %>
     </p>
-    
+    <p>
+        <strong>Game Username:</strong>
+        <%= comment.game_username %>
+    </p>
     <p>
         <strong>Comment:</strong>
         <%= comment.body %>
@@ -36,6 +39,10 @@
     <p>
         <%= f.label :commenter %> <br>
         <%= f.text_field :commenter %>
+    </p>
+    <p>
+        <%= f.label :game_username %> <br>
+        <%= f.text_field :game_username %>
     </p>
     <p>
         <%= f.label :body %><br>
