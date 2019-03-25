@@ -65,5 +65,9 @@ header{
 
 #button{
     color: white;
-    background-color: black;
+    background-color: #383838;
+    z-index: 999;
+    position: relative;
+    bottom: 4.1vw;
+    padding: 1.26vw;
 }
