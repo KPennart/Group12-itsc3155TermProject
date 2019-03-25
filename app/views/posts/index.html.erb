@@ -1,7 +1,8 @@
 <%= render 'design' %>
 
 <h1 id = "listing">Listing posts</h1>
-<%= link_to 'New post', new_post_path %>
+<!--<%= link_to 'New post', new_post_path %>-->
+<%= button_to "New post", new_post_path, :class => "button", :method => :get %>
 <table id = "gamePost">
   <tr>
     <th>Title</th>
