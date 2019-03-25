@@ -34,14 +34,14 @@ header{
     object-fit: cover;
     position: relative;
     z-index: -1;
-    overflow: hidden;
+    
 }
 
 #listing{
-    width: 100%;
+    width: 88%;
     float: left;
-    padding-left: 12em;
-    
+    padding-left: 12vw;
+    padding-right: auto;
    
     font-family: arial;
     margin: 0;  
