@@ -1,5 +1,7 @@
 <%= render 'design' %>
-
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
   <h1 id = "listing">Listing posts</h1>
 
 
@@ -16,10 +18,11 @@
  
   <% @posts.each do |post| %>
     <tr>
-      <td><%= post.title %></td>
-      <td><%= post.title_of_the_game %></td>
-      <td><%= post.game_username %></td>
-      <td><%= post.text %></td>
+      
+      <td id = "tableCell"><%= post.title %></td>
+      <td id = "tableCell"><%= post.title_of_the_game %></td>
+      <td id = "tableCell"><%= post.game_username %></td>
+      <td id = "tableCell"><%= post.text %></td>
       <td><%= link_to 'Show', post_path(post) %></td>
       <td><%= link_to 'Edit', edit_post_path(post) %></td>
       <td><%= link_to 'Delete', 
