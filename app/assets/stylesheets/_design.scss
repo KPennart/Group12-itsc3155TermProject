@@ -44,9 +44,9 @@ header{
     color: white;
     position: fixed;
     z-index: 999;
-    margin: 0;
     display: block;
     width: 100%;
+    
 }
 
 
@@ -54,9 +54,10 @@ header{
 #listing{
     width: 100%;
     text-align:center;
- 
+    z-index: 999;
     margin: 0;
-    
+    position: fixed;
+    display: block;
     font-size: 20px;
     color: white;
     font-weight: lighter;
