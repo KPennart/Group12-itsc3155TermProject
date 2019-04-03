@@ -44,5 +44,5 @@ end
 
 private
     def post_params
-        params.require(:post).permit(:title, :title_of_the_game, :game_username, :text)
+        params.require(:post).permit(:title, :title_of_the_game, :game_username, :text, :poster_id => current_user.id)
     end

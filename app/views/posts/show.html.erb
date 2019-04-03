@@ -6,6 +6,11 @@
 </p>
 
 <p>
+    <strong>User ID:</strong>
+    <%= current_user.id %>
+</p>
+
+<p>
     <strong>Game Title:</strong>
     <%= @post.title_of_the_game %>
 </p>
@@ -40,7 +45,7 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
     <p>
         <%= f.label :commenter %> <br>
-        <%= f.text_field :commenter %>
+        <%= current_user.name %>
     </p>
     <p>
         <%= f.label :game_username %> <br>
