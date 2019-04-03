@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_25_205943) do
+ActiveRecord::Schema.define(version: 2019_04_03_165833) do
 
   create_table "comments", force: :cascade do |t|
     t.string "commenter"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2019_03_25_205943) do
     t.string "title"
     t.string "title_of_the_game"
     t.string "game_username"
+    t.string "poster_id"
+    t.string "poster_name"
     t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -13,7 +13,8 @@ class PostsController < ApplicationController
     
     def create
         @post = Post.new(post_params)
-        
+        @post.poster_name = current_user.name
+        @post.poster_id = current_user.id
         if @post.save
             redirect_to @post
         else
@@ -44,5 +45,5 @@ end
 
 private
     def post_params
-        params.require(:post).permit(:title, :title_of_the_game, :game_username, :text, :poster_id => current_user.id)
+        params.require(:post).permit(:title, :title_of_the_game, :game_username, :poster_name, :poster_id, :text)
     end

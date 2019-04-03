@@ -4,6 +4,8 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :title_of_the_game
       t.string :game_username
+      t.string :poster_id
+      t.string :poster_name
       t.text :text
 
       t.timestamps
