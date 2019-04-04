@@ -44,7 +44,6 @@ header{
     color: white;
     position: fixed;
     z-index: 999;
-    margin: 0;
     display: block;
     width: 100%;
     
@@ -121,7 +120,7 @@ a{
     color: white;
 }
 
-#sign_in{
+#sign_in, #sign_out{
     position: fixed;
     text-align: right;
     width: 100%;
