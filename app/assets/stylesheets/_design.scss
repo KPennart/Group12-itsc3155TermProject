@@ -68,11 +68,12 @@ header{
 #button{
     color: white;
     background-color: #383838;
-    z-index: 999;
-    position: relative;
-    bottom: 3.10vw;
-    padding: 1.02vw;
-    right: 37vw;
+    position: fixed;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Press Start 2P', cursive; 
+   
 }
 
 
