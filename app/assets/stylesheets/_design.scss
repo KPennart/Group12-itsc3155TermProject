@@ -92,11 +92,15 @@ background-repeat:no-repeat;
 
 
 table {
-  border-collapse: collapse;
-   margin-left: auto;
-    margin-right: auto;
-    margin-top: 5vw;
+    border-collapse: collapse;
+    margin-left: 39%;
+    margin-right: 50%;
     background-color: white;
+    z-index: 1000;
+    position: fixed;
+    display: table-cell;
+    margin-top: 150px;
+    overflow: hidden;
 }
 
 table, th, td {
