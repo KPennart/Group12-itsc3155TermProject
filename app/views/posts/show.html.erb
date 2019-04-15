@@ -1,5 +1,5 @@
 <%= render 'design' %>
-<div id = "strip"></div>
+<div class = "postContainer" id = "commentbox">
 <p>
     <strong>Title:</strong>
     <%= @post.title %>
@@ -56,8 +56,8 @@
         <%= f.text_area :body %>
     </p>
     <p>
-        <%= f.submit %>
+        <%= f.button :submit => "", class: "submit" %>
     </p>
 <% end %>
-
+</div>
 <%= link_to 'Post List', posts_path %>

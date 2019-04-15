@@ -17,27 +17,8 @@ text-align: center;
 position: absolute;
     
 }
-/*
-header{
- height: 150px;
-  width: 100%;
-
-  margin-top:0;
-
-*/
 
 
-/*
-#banner{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    position: relative;
-    z-index: 1;
-    
-}
-
-*/
 
 #banner{
     text-align: center;
@@ -135,7 +116,7 @@ a{
 }
 
 #sign_in, a[id='sign out']{
-    position: fixed;
+    position: absolute;
     text-align: right;
     width: 300px;
     margin-left: 79%;
@@ -147,7 +128,7 @@ a{
     z-index: 999;
     text-decoration: none;
     color: white;
-    position: fixed;
+    position: absolute;
     margin-left: 91%;
     margin-top: 1.5%;
     margin-right: 20%;
@@ -172,11 +153,17 @@ a{
 .postContainer{
      left: 0;
     right: 0;
-    position: fixed;
+    position: absolute;
  margin: 0 auto;
  padding-top: 100px;
  color: white;
  opacity: .8;
  width: 50%;
-    
+word-wrap: break-word;
+height: 500px;    
 }
+
+
+#commentbox{
+  border-bottom: 50px;   
+}    
