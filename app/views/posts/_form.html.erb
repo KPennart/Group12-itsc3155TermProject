@@ -37,10 +37,13 @@
   
   <p>
     
-    </div>
+    
+  
     <%= form_for @post do |f| %>
-      <%= f.button %>
+    
+      
+  <%= f.button :submit => "", class: "submit" %>
     <% end %>
   </p>
-  
+  </div>
 <% end %>

@@ -67,7 +67,7 @@ header{
 
 #button{
     color: white;
-    background-color: #383838;
+    background-color: transparent;
     position: fixed;
     padding: 0;
     border: none;
@@ -76,6 +76,13 @@ header{
    
 }
 
+.submit{
+    background-color: transparent;
+    color: white;
+    font-family: 'Press Start 2P', cursive; 
+    border: none;
+    float: right;
+}
 
 
 .container{
