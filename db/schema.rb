@@ -10,11 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_03_165833) do
+ActiveRecord::Schema.define(version: 2019_04_15_202637) do
 
   create_table "comments", force: :cascade do |t|
     t.string "commenter"
     t.string "game_username"
+    t.string "date"
+    t.string "poster_id"
     t.text "body"
     t.integer "post_id"
     t.datetime "created_at", null: false
