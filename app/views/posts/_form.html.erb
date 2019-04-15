@@ -13,7 +13,7 @@
       </ul>
     </div>
   <% end %>
- 
+ <div class = "postContainer">
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
@@ -36,6 +36,8 @@
   </p>
   
   <p>
+    
+    </div>
     <%= form_for @post do |f| %>
       <%= f.button %>
     <% end %>
