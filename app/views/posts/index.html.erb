@@ -26,13 +26,11 @@
       <td id = "tableCell"><%= post.text %></td>
       <td><%= link_to 'Show', post_path(post) %></td>
       <td><%= link_to 'Edit', edit_post_path(post) %></td>
-      <% if owner?(post.poster_id) %> <td><%= link_to 'Delete', 
+      <td><%= link_to 'Delete', 
                                post_path(post),
                                :confirm => 'Are you sure?',
                                method: :delete,
-                               data: { confirm: 'Are you sure?' } %></td> <% end %>
-      <td> <%= post.poster_id %> </td>
-      <td> <%= current_user.id %> </td>
+                               data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
