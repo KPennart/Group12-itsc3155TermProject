@@ -1,5 +1,6 @@
 <%= render 'design' %>
 <div class = "postContainer" id = "commentbox">
+
 <p>
     <strong>Title:</strong>
     <%= @post.title %>
@@ -24,7 +25,10 @@
     <strong>Text:</strong>
     <%= @post.text %>
 </p>
-
+    <br>
+    <br>
+    <br>
+    <br>
 <h2>Comments</h2>
 <% @post.comments.each do |comment| %>
     <p>
@@ -40,6 +44,9 @@
         <%= comment.body %>
     </p>
 <% end %>
+    <br>
+    <br>
+    <br>
 
 <h2>Add a comment</h2>
 <%= form_for([@post, @post.comments.build]) do |f| %>
