@@ -19,6 +19,23 @@ html, body{
 
 .divider{
     border: solid white;
-    
+    background-color: rgb(170,49,131);
+  
+}
+
+#titleContainer{
+    border-left: none;
+    border-right: none;
+    background-color: black;
+}
+
+p{
+ color: black;   
     
 }
+
+#postContainer1{
+height: 500px;    
+    
+}
+
