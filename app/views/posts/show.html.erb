@@ -1,6 +1,9 @@
 <%= render 'design' %>
-<div class = "postContainer" id = "commentbox">
 
+<div class = "postContainer" id = "commentbox">
+    
+<div class = "divider">    
+<h3 id = "postTitle"><%= @post.title %></h3>
 <p>
     <strong>Title:</strong>
     <%= @post.title %>
@@ -25,10 +28,14 @@
     <strong>Text:</strong>
     <%= @post.text %>
 </p>
+</div>
+
     <br>
     <br>
     <br>
     <br>
+    
+<div class = "divider">   
 <h2>Comments</h2>
 <% @post.comments.each do |comment| %>
     <p>
@@ -48,10 +55,13 @@
         <%= Time.now %>
     </p>
 <% end %>
-    <br>
-    <br>
-    <br>
+</div>
 
+
+    <br>
+    <br>
+    <br>
+<div class = "divider">  
 <h2>Add a comment</h2>
 <%= form_for([@post, @post.comments.build]) do |f| %>
     <p>
@@ -70,5 +80,8 @@
         <%= f.button :submit => "", class: "submit" %>
     </p>
 <% end %>
+</div>
+
+
 </div>
 <%= link_to 'Post List', posts_path %>
