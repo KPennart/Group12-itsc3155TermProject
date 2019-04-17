@@ -19,6 +19,7 @@ textarea
     border: 2px solid #ccc;
     background-color: #f8f8f8;
     resize: none;
+    box-sizing:border-box;
 }
 
 input[type=button], input[type=submit]
