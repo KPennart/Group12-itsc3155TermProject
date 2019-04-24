@@ -22,7 +22,7 @@ position: absolute;
 
 #banner{
     text-align: center;
-    color: white;
+    color: #e3e3e3;
     position: fixed;
     z-index: 999;
     display: block;
@@ -38,7 +38,7 @@ position: absolute;
     
     margin-top: 100px;
     font-size: 20px;
-    color: white;
+    color: #e3e3e3;
     font-weight: lighter;
     position: fixed;
     
@@ -47,7 +47,7 @@ position: absolute;
 
 
 #button{
-    color: white;
+    color: #e3e3e3;
     background-color: transparent;
     position: fixed;
     padding: 0;
@@ -59,7 +59,15 @@ position: absolute;
 
 .submit{
     background-color: transparent;
-    color: white;
+    
+    font-family: 'Press Start 2P', cursive; 
+    border: none;
+    float: right;
+}
+
+#newsubmit{
+    background-color: #e3e3e3;
+    color: black;  
     font-family: 'Press Start 2P', cursive; 
     border: none;
     float: right;
@@ -69,7 +77,7 @@ position: absolute;
 .container{
 width: 100%;
 height: 100%;
-background-image: url("/assets/drive.gif");
+background-image: url("/assets/play.gif");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -79,9 +87,23 @@ background-repeat:no-repeat;
 }
 
 
+#postpage{
+ width: 100%;
+height: 100%;
+background-image: url("/assets/game.gif");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+	filter: brightness(50%);
+	z-index: -1;
+	position: fixed;   
+    
+    
+}
+
 table {
  border-collapse: collapse;
-    background-color: white;
+    background-color: #e3e3e3;
     z-index: 1000;
     margin: 0 auto;
 }
@@ -126,7 +148,7 @@ a{
     position: absolute;
     text-align: right;
     width: 300px;
-    margin-left: 79%;
+    margin-left: 78%;
     
     
 }
@@ -134,7 +156,7 @@ a{
 #username{
     z-index: 999;
     text-decoration: none;
-    color: white;
+    color: #e3e3e3;
     position: absolute;
     margin-left: 91%;
     margin-top: 1.5%;
@@ -174,3 +196,8 @@ word-wrap: break-word;
 #commentbox{
   border-bottom: 50px;   
 }    
+
+.postsub{
+    color: white;
+    
+}

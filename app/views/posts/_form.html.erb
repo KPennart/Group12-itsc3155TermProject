@@ -15,22 +15,22 @@
   <% end %>
  <div class = "postContainer">
   <p>
-    <%= f.label :title %><br>
+    <%= f.label :title, class: "postsub" %><br>
     <%= f.text_field :title %>
   </p>
   
   <p>
-    <%= f.label :title_of_the_game %><br>
+    <%= f.label :title_of_the_game, class: "postsub" %><br>
     <%= f.text_field :title_of_the_game %>
   </p>
   
   <p>
-    <%= f.label :game_username %><br>
+    <%= f.label :game_username, class: "postsub" %><br>
     <%= f.text_field :game_username %>
   </p>
  
   <p>
-    <%= f.label :text %><br>
+    <%= f.label :text, class: "postsub" %><br>
     <%= f.text_area :text %>
   </p>
   
@@ -41,7 +41,7 @@
     <%= form_for @post do |f| %>
     
       
-  <%= f.button :submit => "", class: "submit" %>
+  <%= f.button :submit => "", class: "submit", id: "newsubmit" %>
     <% end %>
   </p>
   </div>
