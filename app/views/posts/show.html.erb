@@ -44,10 +44,14 @@
 </div>
 <% @post.comments.each do |comment| %>
     <% if current_user %>
+        <% if (current_user.id.to_s.strip == @post.poster_id.to_s.strip) %>
         <p>
             <strong>Game Username:</strong>
             <%= comment.game_username %>
         </p>
+        <% else %>
+        Only Topic poster can see Usernames
+        <% end %>
     <% else %>
     Only Topic poster can see Usernames
     <% end %>
