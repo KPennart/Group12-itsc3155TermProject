@@ -21,10 +21,19 @@
     <%= @post.poster_name %>
 </p>
 
-<p>
-    <strong>Game Username:</strong>
-    <%= @post.game_username %>
-</p>
+<% if current_user %>
+    <% if (current_user.id.to_s.strip == @post.poster_id.to_s.strip) %>
+        <p>
+            <strong>Game Username:</strong>
+            <%= @post.game_username %>
+        </p>
+    <% else %>
+        <p>Only Topic poster can see Game Usernames</p>
+    <% end %>
+<% else %>
+<p>Only Topic poster can see Game Usernames</p>
+<% end %>
+
     <br>
     <br>
 <p>
@@ -50,10 +59,10 @@
             <%= comment.game_username %>
         </p>
         <% else %>
-       <p> Only Topic poster can see Usernames</p>
+       <p> Only Topic poster can see Game Usernames</p>
         <% end %>
     <% else %>
-    <p>Only Topic poster can see Usernames</p>
+    <p>Only Topic poster can see Game Usernames</p>
     <% end %>
     <p>
         <strong>Comment:</strong>
