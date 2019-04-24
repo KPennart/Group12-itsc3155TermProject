@@ -14,16 +14,15 @@
     <th>Title</th>
     <th>Game Title</th>
     <th>Game Username</th>
-    <th>Text</th>
   </tr>
  
   <% @posts.each do |post| %>
     <tr>
       
-      <td id = "tableCell"><%= post.title %></td>
+      <td id = "tableCell"><%= link_to post.title, post_path(post) %></td>
       <td id = "tableCell"><%= post.title_of_the_game %></td>
-      <td id = "tableCell"><%= post.text %></td>
-      <td><%= link_to 'Show', post_path(post), id: "action" %></td>
+      <td id = "tableCell"><%= link_to post.text, post_path(post) %></td>
+      <!-- <td><%= link_to 'Show', post_path(post), id: "action" %></td> -->
       <% if current_user %>
       <% if (current_user.id.to_s.strip == post.poster_id.to_s.strip) %>
       <td><%= link_to 'Edit', edit_post_path(post), id: "action" %></td>
