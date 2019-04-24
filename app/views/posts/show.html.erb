@@ -2,8 +2,10 @@
 
 <div class = "postContainer" id = "commentbox">
     
-<div class = "divider">    
+<div class = "divider" id = "postContainer1">
+    <div class = "divider" id = "titleContainer">       
 <h3 id = "postTitle"><%= @post.title %></h3>
+</div>
 <p>
     <strong>Title:</strong>
     <%= @post.title %>
@@ -23,9 +25,10 @@
     <strong>Game Username:</strong>
     <%= @post.game_username %>
 </p>
-
+    <br>
+    <br>
 <p>
-    <strong>Text:</strong>
+    
     <%= @post.text %>
 </p>
 </div>
@@ -35,8 +38,10 @@
     <br>
     <br>
     
-<div class = "divider">   
+<div class = "divider">
+    <div class = "divider" id = "titleContainer">      
 <h2>Comments</h2>
+</div>
 <% @post.comments.each do |comment| %>
     <p>
         <strong>Commenter:</strong>
@@ -54,6 +59,8 @@
         <strong>Date:</strong>
         <%= Time.now %>
     </p>
+    <br>
+    <br>
 <% end %>
 </div>
 
@@ -61,8 +68,10 @@
     <br>
     <br>
     <br>
-<div class = "divider">  
+<div class = "divider">
+    <div class = "divider" id = "titleContainer">     
 <h2>Add a comment</h2>
+</div>
 <%= form_for([@post, @post.comments.build]) do |f| %>
     <p>
         <%= f.label :commenter %> <br>
