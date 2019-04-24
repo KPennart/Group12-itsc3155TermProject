@@ -43,21 +43,21 @@
 <h2>Comments</h2>
 </div>
 <% @post.comments.each do |comment| %>
-    <p>
-        <strong>Commenter:</strong>
-        <%= comment.commenter %>
-    </p>
-    <p>
-        <strong>Game Username:</strong>
-        <%= comment.game_username %>
-    </p>
+    <% if current_user %>
+        <p>
+            <strong>Game Username:</strong>
+            <%= comment.game_username %>
+        </p>
+    <% else %>
+    Only Topic poster can see Usernames
+    <% end %>
     <p>
         <strong>Comment:</strong>
         <%= comment.body %>
     </p>
     <p>
         <strong>Date:</strong>
-        <%= Time.now %>
+        <%= comment.date %>
     </p>
     <br>
     <br>
@@ -73,10 +73,6 @@
 <h2>Add a comment</h2>
 </div>
 <%= form_for([@post, @post.comments.build]) do |f| %>
-    <p>
-        <%= f.label :commenter %> <br>
-        <%= f.label current_user.name %>
-    </p>
     <p>
         <%= f.label :game_username %> <br>
         <%= f.text_field :game_username %>
