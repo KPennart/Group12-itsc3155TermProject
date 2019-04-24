@@ -28,10 +28,10 @@
             <%= @post.game_username %>
         </p>
     <% else %>
-        <p>Only Topic poster can see Game Usernames</p>
+        <p> <b>Game Username: </b> <i>Only the topic poster can see game usernames</i></p>
     <% end %>
 <% else %>
-<p>Only Topic poster can see Game Usernames</p>
+<p> <b>Game Username: </b> <i>Only the topic poster can see game usernames</i></p>
 <% end %>
 
     <br>
@@ -59,18 +59,14 @@
             <%= comment.game_username %>
         </p>
         <% else %>
-       <p> Only Topic poster can see Game Usernames</p>
+       <p> <b>Game Username: </b> <i>Only the topic poster can see game usernames</i></p>
         <% end %>
     <% else %>
-    <p>Only Topic poster can see Game Usernames</p>
+    <p> <b>Game Username: </b> <i>Only the topic poster can see game usernames</i></p>
     <% end %>
     <p>
         <strong>Comment:</strong>
         <%= comment.body %>
-    </p>
-    <p>
-        <strong>Date:</strong>
-        <%= comment.date %>
     </p>
     <br>
     <br>
