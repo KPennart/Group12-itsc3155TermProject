@@ -40,6 +40,19 @@
     
     <%= @post.text %>
 </p>
+
+<% if current_user %>
+    <% if (current_user.id.to_s.strip == @post.poster_id.to_s.strip) %>
+        <p>
+        <%= link_to 'Edit', edit_post_path(@post), id: "action" %></td>
+        <%= link_to 'Delete', 
+                    post_path(@post),
+                    :confirm => 'Are you sure?',
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } ,id: "action"  %></td>
+        </p>
+    <% end %>
+<% end %>
 </div>
 
     <br>
