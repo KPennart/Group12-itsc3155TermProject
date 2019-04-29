@@ -1,12 +1,15 @@
 <%= render 'design' %>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-</head>
+  </head>
   <h1 id = "listing">Listing posts</h1>
 
 
-
-<%= link_to 'New post', new_post_path %>
+<% if current_user %>
+  <%= link_to 'New post', new_post_path %>
+<% else %>
+  <%= link_to 'Log in to create post', posts_path %>
+<% end %>
 <!--<%= button_to "New post", new_post_path, :class => "button", :method => :get, id: 'button' %>-->
 <div class = tableContainer>
 <table id = "gamePost">
@@ -14,7 +17,7 @@
     <th>Title</th>
     <th>User</th>
     <th>Game Title</th>
-    <th>Text</th>
+    <!-- <th>Text</th> -->
   </tr>
  
   <% @posts.each do |post| %>
@@ -23,7 +26,7 @@
       <td id = "tableCell"><%= link_to post.title, post_path(post) %></td>
       <td id = "tableCell"><%= post.poster_name %></td>
       <td id = "tableCell"><%= post.title_of_the_game %></td>
-      <td id = "tableCell"><%= link_to post.text, post_path(post) %></td>
+      <!-- <td id = "tableCell"><%= link_to post.text, post_path(post) %></td> -->
     </tr>
   <% end %>
 </table>
